@@ -70,7 +70,7 @@ const Form = () => {
             </select>
           </div>
           <div className="flex flex-col mb-4">
-            <label htmlFor="cp" className="mb-2">Tipo de Dolor en el Pecho:</label>
+            <label htmlFor="cp" className="mb-2">Tipo de dolor en el pecho:</label>
             <select id="cp" name="cp" value={formData.cp} onChange={handleChange} className="border p-2 rounded">
               <option value="0">Angina Típica</option>
               <option value="1">Angina Atípica</option>
@@ -79,7 +79,7 @@ const Form = () => {
             </select>
           </div>
           <div className="flex flex-col mb-4">
-            <label htmlFor="trtbps" className="mb-2">Presión Arterial en Reposo:</label>
+            <label htmlFor="trtbps" className="mb-2">Presión arterial en reposo:</label>
             <input type="number" id="trtbps" name="trtbps" value={formData.trtbps} onChange={handleChange} placeholder="Presión Arterial en Reposo" required className="border p-2 rounded" />
           </div>
           <div className="flex flex-col mb-4">
@@ -87,14 +87,14 @@ const Form = () => {
             <input type="number" id="chol" name="chol" value={formData.chol} onChange={handleChange} placeholder="Colesterol" required className="border p-2 rounded" />
           </div>
           <div className="flex flex-col mb-4">
-            <label htmlFor="fbs" className="mb-2">Nivel de Azúcar en Sangre en Ayunas:</label>
+            <label htmlFor="fbs" className="mb-2">Azúcar en la sangre en ayunas:</label>
             <select id="fbs" name="fbs" value={formData.fbs} onChange={handleChange} className="border p-2 rounded">
               <option value="0">Falso</option>
               <option value="1">Verdadero</option>
             </select>
           </div>
           <div className="flex flex-col mb-4">
-            <label htmlFor="restecg" className="mb-2">Resultado del Electrocardiograma en Reposo:</label>
+            <label htmlFor="restecg" className="mb-2">Electrocardiograma en reposo:</label>
             <select id="restecg" name="restecg" value={formData.restecg} onChange={handleChange} className="border p-2 rounded">
               <option value="0">Normal</option>
               <option value="1">Anormalidad de la onda ST-T</option>
@@ -102,22 +102,22 @@ const Form = () => {
             </select>
           </div>
           <div className="flex flex-col mb-4">
-            <label htmlFor="thalachh" className="mb-2">Ritmo Cardíaco Máximo:</label>
+            <label htmlFor="thalachh" className="mb-2">Ritmo cardíaco máximo:</label>
             <input type="number" id="thalachh" name="thalachh" value={formData.thalachh} onChange={handleChange} placeholder="Ritmo Cardíaco Máximo" required className="border p-2 rounded" />
           </div>
           <div className="flex flex-col mb-4">
-            <label htmlFor="exng" className="mb-2">Angina Inducida por el Ejercicio:</label>
+            <label htmlFor="exng" className="mb-2">Angina inducida por el ejercicio:</label>
             <select id="exng" name="exng" value={formData.exng} onChange={handleChange} className="border p-2 rounded">
               <option value="0">No</option>
               <option value="1">Sí</option>
             </select>
           </div>
           <div className="flex flex-col mb-4">
-      <label htmlFor="oldpeak" className="mb-2">Depresión del Segmento ST:</label>
+      <label htmlFor="oldpeak" className="mb-2">Depresión del segmento ST:</label>
       <input type="number" id="oldpeak" name="oldpeak" value={formData.oldpeak} onChange={handleChange} placeholder="Depresión del ST" required className="border p-2 rounded" />
     </div>
     <div className="flex flex-col mb-4">
-      <label htmlFor="slp" className="mb-2">Inclinación del Segmento ST:</label>
+      <label htmlFor="slp" className="mb-2">inclinación del segmento ST:</label>
       <select id="slp" name="slp" value={formData.slp} onChange={handleChange} className="border p-2 rounded">
         <option value="0">Ascendente</option>
         <option value="1">Plano</option>
@@ -125,11 +125,11 @@ const Form = () => {
       </select>
     </div>
     <div className="flex flex-col mb-4">
-      <label htmlFor="caa" className="mb-2">Número de Vasos Principales:</label>
+      <label htmlFor="caa" className="mb-2">Número de vasos principales detectados:</label>
       <input type="number" id="caa" name="caa" value={formData.caa} onChange={handleChange} placeholder="Número de Vasos Principales" required className="border p-2 rounded" />
     </div>
     <div className="flex flex-col mb-4">
-      <label htmlFor="thall" className="mb-2">Resultado de la Prueba de Estrés:</label>
+      <label htmlFor="thall" className="mb-2">Resultado de la prueba de estrés:</label>
       <select id="thall" name="thall" value={formData.thall} onChange={handleChange} className="border p-2 rounded">
         <option value="0">Nulo</option>
         <option value="1">Defecto Fijo</option>

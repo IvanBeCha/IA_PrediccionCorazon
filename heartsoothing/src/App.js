@@ -1,24 +1,28 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import LandingPage from './pages/LandingPage/LandingPage';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
-import './assets/styles/global.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './assets/styles/index.css';
 
-const App = () => {
+function App() {
+  const navigateToHome = () => {
+    window.location.href = '/';
+  };
+
   return (
     <Router>
       <div>
-        <Navbar />
+        <Navbar navigateToHome={navigateToHome} />
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/form" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
+        <About />
       </div>
     </Router>
   );
-};
+}
 
 export default App;
